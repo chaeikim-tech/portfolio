@@ -91,10 +91,10 @@ header {
 .contentsBox {
   position: absolute;
   margin-left: $fixedWidth;
-  color: white;
+  color: $white;
   top: 0;
   .movie {
-    background: $red;
+    background: linear-gradient(to bottom, $red, $white);
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
