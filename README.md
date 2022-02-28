@@ -1,2 +1,2 @@
-# Eunju.Kim Portfolio
+# Chaei Kim Portfolio
 
