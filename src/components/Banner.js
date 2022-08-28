@@ -5,6 +5,23 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 
 
 export const Banner = () => {
+    const [loopNum, setLoopNum] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const toRotate = ["Web Developer", "Front-end Developer"];
+    const [text, setText] = useState("");
+    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const period = 2000;
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        }, delta)
+
+        return () => { clearInterval(ticker) };
+    }, [text])
+
+
+
     return (
         <section className='banner' id="home">
             <Container>
