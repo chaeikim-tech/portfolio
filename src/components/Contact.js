@@ -23,6 +23,10 @@ export const Contact = () => {
         })
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <section className='contact' id="connect">
             <Container>
@@ -32,16 +36,19 @@ export const Contact = () => {
                     </Col>
                     <Col md={6} >
                         <h2>Get In Touch</h2>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6} className="px-1">
                                     <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate("firstName", e.target.value)} ></input>
                                 </Col>
                                 <Col sm={6} className="px-1">
+                                    <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate("lastName", e.target.value)} ></input>
                                 </Col>
                                 <Col sm={6} className="px-1">
+                                    <input type="text" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate("email", e.target.value)} ></input>
                                 </Col>
                                 <Col sm={6} className="px-1">
+                                    <input type="text" value={formDetails.phone} placeholder="Phone Number" onChange={(e) => onFormUpdate("phone", e.target.value)} ></input>
                                 </Col>
                             </Row>
                         </form>
