@@ -12,6 +12,7 @@ export const Contact = () => {
     }
 
     const [formDetails, setFormDetails] = useState(formInitialDetils);
+    const [status, setStatus] = useState({});
 
 
 
@@ -50,6 +51,11 @@ export const Contact = () => {
                                 <Col sm={6} className="px-1">
                                     <input type="text" value={formDetails.phone} placeholder="Phone Number" onChange={(e) => onFormUpdate("phone", e.target.value)} ></input>
                                 </Col>
+                                <Col>
+                                    <textarea row="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate("message", e.target.value)}></textarea>
+                                    <button type="submit"><span>{buttonText}</span></button>
+                                </Col>
+
                             </Row>
                         </form>
                     </Col>
