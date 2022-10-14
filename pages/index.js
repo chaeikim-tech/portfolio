@@ -4,6 +4,9 @@ import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from "react-icons/
 import Image from "next/image";
 import profilePic from "../public/dev.svg";
 import computerPic from "../public/computer.svg";
+import bookPic from "../public/books.svg";
+import toolPic from "../public/tools.svg";
+
 
 
 export default function Home() {
@@ -50,9 +53,27 @@ export default function Home() {
             <h3 className='text-3xl py-1'>It's Me</h3>
             <p className='text-md py-2 leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <span className='text-teal-500'>incididunt</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <span className='text-teal-500'>exercitation</span> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <span className='text-teal-500'>voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
-          <div>
+          <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
               <Image src={computerPic} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-7 pb-2'>My Stacks</h3>
+              <p className='py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4 className='py-4 text-teal-600 font-medium'>Programming Language I use</h4>
+              <p className='py-1'>JavaScript</p>
+              <p className='py-1'>TypeScript</p>
+              <p className='py-1'>Java</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+              <Image src={bookPic} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-7 pb-2'>My Stacks</h3>
+              <p className='py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4 className='py-4 text-teal-600 font-medium'>Programming Language I use</h4>
+              <p className='py-1'>JavaScript</p>
+              <p className='py-1'>TypeScript</p>
+              <p className='py-1'>Java</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+              <Image src={toolPic} width={100} height={100} />
               <h3 className='text-lg font-medium pt-7 pb-2'>My Stacks</h3>
               <p className='py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <h4 className='py-4 text-teal-600 font-medium'>Programming Language I use</h4>
